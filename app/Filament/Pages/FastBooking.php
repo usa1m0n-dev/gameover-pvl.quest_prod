@@ -210,6 +210,9 @@ class FastBooking extends Page
                                 ->hiddenLabel()
                                 ->addActionLabel('Добавить игру')
                                 ->defaultItems(1)
+                                ->default([
+                                    ['activity_id' => 7],
+                                ])
                                 ->schema([
                                     Group::make()->columns(2)->schema([
                                         Select::make('activity_id')
@@ -217,8 +220,7 @@ class FastBooking extends Page
                                             ->options(Activity::pluck('name', 'id'))
                                             ->required()
                                             ->live()
-                                            ->afterStateUpdated($calculateTotals)
-                                            ->default(7),
+                                            ->afterStateUpdated($calculateTotals),
 
                                         TextInput::make('players_count')
                                             ->label('Кол-во человек')
