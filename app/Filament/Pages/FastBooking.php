@@ -217,7 +217,8 @@ class FastBooking extends Page
                                             ->options(Activity::pluck('name', 'id'))
                                             ->required()
                                             ->live()
-                                            ->afterStateUpdated($calculateTotals),
+                                            ->afterStateUpdated($calculateTotals)
+                                            ->default(7),
 
                                         TextInput::make('players_count')
                                             ->label('Кол-во человек')

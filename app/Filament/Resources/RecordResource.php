@@ -507,8 +507,8 @@ class RecordResource extends Resource
                                     ->visible(function (Forms\Get $get) {
                                         $activityId = $get('activity_id');
                                         if (!$activityId) return false;
-                                        return $activityId==1;}) 
-                                    ->required(fn(Forms\Get $get) => /* То же условие, что и в visible */ in_array($get('activity_id'), [1])),
+                                        return $activityId==1||$activityId==7;}) 
+                                    ->required(fn(Forms\Get $get) => /* То же условие, что и в visible */ in_array($get('activity_id'), [1,7])),
 
                                 Forms\Components\TextInput::make('players_count')
                                     ->label('Количество')
