@@ -32,5 +32,5 @@ Route::get('/keychain_controller/get_pending/{point}', [\App\Http\Controllers\Gu
 Route::post('/keychain_controller/set_status/{point}', [\App\Http\Controllers\GuestKeychainController::class, 'set_status']);
 
 Route::get("/testgit", function() {
-    return "OK";
+    return "OKe";
 });
