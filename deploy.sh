@@ -28,6 +28,8 @@ php artisan view:cache
 # Если в проекте используется Filament, оптимизируем и его панели
 php artisan filament:optimize || true
 
+sudo systemctl restart php8.3-fpm.service
+
 # Выключаем режим обслуживания — сайт снова онлайн
 php artisan up
 
