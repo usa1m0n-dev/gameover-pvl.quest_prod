@@ -30,7 +30,3 @@ Route::middleware('auth')->group(function () {
 // А эти два лучше кинуть в api.php или добавить в исключения CSRF:
 Route::get('/keychain_controller/get_pending/{point}', [\App\Http\Controllers\GuestKeychainController::class, 'check_pending']);
 Route::post('/keychain_controller/set_status/{point}', [\App\Http\Controllers\GuestKeychainController::class, 'set_status']);
-
-Route::get("/testgit", function() {
-    return "OKe";
-});
