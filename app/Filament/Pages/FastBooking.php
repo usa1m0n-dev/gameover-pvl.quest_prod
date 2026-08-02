@@ -31,6 +31,7 @@ class FastBooking extends Page
     protected static string $view = 'filament.pages.fast-booking';
     protected static ?string $title = 'Быстрая запись';
     protected static ?string $navigationLabel = 'Быстрая запись';
+    protected static ?string $navigationGroup = 'Сервисное';
     protected static ?int $navigationSort = 0;
 
     public ?array $data = [];

@@ -19,7 +19,7 @@ class FastEntryResource extends Resource
     protected static ?string $model = FastEntry::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-users';
-    protected static ?string $navigationLabel = 'Список записей';
+    protected static ?string $navigationLabel = 'Список записей(внос на рассылку)';
     protected static ?string $pluralModelLabel = 'Записи быстрого ввода';
     protected static ?string $modelLabel = 'Запись';
 

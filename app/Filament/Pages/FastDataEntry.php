@@ -20,6 +20,7 @@ class FastDataEntry extends Page
     protected static ?string $navigationLabel = 'Быстрый ввод';
     protected static ?string $title = 'Потоковый ввод данных';
     protected static string $view = 'filament.pages.fast-data-entry';
+    protected static ?string $navigationGroup = 'Клиенты';
 
     public ?array $data = [];
 

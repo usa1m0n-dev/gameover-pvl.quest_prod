@@ -22,7 +22,7 @@ class GuestResource extends Resource
     protected static ?string $label = "Гость";
     protected static ?string $pluralLabel = "Гости";
     protected static ?int $navigationSort = 2;
-    protected static ?string $navigationGroup = 'Справочники';
+    protected static ?string $navigationGroup = 'Клиенты';
 
     public static function form(Form $form): Form
     {
